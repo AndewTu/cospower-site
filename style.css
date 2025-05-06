@@ -222,3 +222,27 @@ h2, .card-title {
   color: white;
 }
 
+/* Видаляємо горизонтальну прокрутку */
+body, html {
+  overflow-x: hidden;
+}
+
+/* Зменшуємо зайві відступи в контейнерах */
+.container, .navbar {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-nav {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Додатково, можна зменшити ширину контейнера на мобільних пристроях */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
